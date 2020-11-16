@@ -988,6 +988,215 @@ questions = [
 			"n": 10,
 			"x": 0
         }
+    },
+	    {
+        "question": "I prefer the practical over the conceptual.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": -5,
+			"x": 0
+        }
+    },
+	    {
+        "question": "Thinking about ideas is the bane of my existence.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 20,
+			"x": 0
+        }
+    },
+	{
+        "question": "I have difficulty understanding abstract concepts.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": -10,
+			"x": 0
+        }
+    },
+	    {
+        "question": "I don’t have much intellectual curiosity.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": -15,
+			"x": 0
+        }
+    },
+	    {
+        "question": "I like to research about topics.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 5,
+			"x": 0
+        }
+    },
+	    {
+        "question": "I hate thinking and pondering.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": -20,
+			"x": 0
+        }
+    },
+	{
+        "question": "Any idea, no matter how absurd it is, can exist in my brain.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 20
+        }
+    },
+	    {
+        "question": "I like to daydream and fantasize.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 10
+        }
+    },
+	    {
+        "question": "I don’t have a good imagination.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": -10
+        }
+    },
+	    {
+        "question": "I prefer staying in the same routine.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": -15
+        }
+    },
+	{
+        "question": "I have a rigid, unchangeable view of the world.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": -20
+        }
+    },
+	    {
+        "question": "I am interested in many things.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 5
+        }
+    },
+	    {
+        "question": "Aesthetic hobbies are a waste of time.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": -5
+        }
+    },
+	    {
+        "question": "I easily find connections between many different things.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 0,
+			"p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 15
+        }
     }
-
 ];
