@@ -268,7 +268,7 @@ questions = [
 			"n": 0,
 			"x": 0
         }
-    }
+    },
 	  {
         "question": "Others’ feelings become my own feelings.",
         "effect": {
@@ -283,7 +283,7 @@ questions = [
 			"n": 0,
 			"x": 0
         }
-    }
+    },
 	  {
         "question": "Others’ feelings become my own feelings.",
         "effect": {
@@ -298,7 +298,7 @@ questions = [
 			"n": 0,
 			"x": 0
         }
-    }
+    },
 	  {
         "question": "Others’ feelings become my own feelings.",
         "effect": {
