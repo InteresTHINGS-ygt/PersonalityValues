@@ -1,0 +1,235 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>PersonalityValues Results</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<script>
+  version = "Test Edition #1" //Remember to update this before making changes to the test itself!
+</script>
+</head>
+<script type="application/javascript"
+        src="ideologies.js">
+</script>
+
+<body>
+<h1>PersonalityValues</h1>
+<hr>
+
+<h1>Results</h1>
+
+<h2>Assertiveness Axis: <span class="weight-300" id="a-label"></span></h2>
+<div class="axis">
+    <img id="img-assertive" src="value_images/assertive.svg" height="128pt"/>
+    <div class="bar assertive" id="bar-assertive"><div class="text-wrapper" id="assertive"></div></div>
+    <div class="bar passive" id="bar-passive"><div class="text-wrapper" id="passive"></div></div>
+    <img id="img-passive" src="value_images/passive.svg" height="128pt"/>
+</div>
+<h2>Enthusiasm Axis: <span class="weight-300" id="e-label"></span></h2>
+<div class="axis">
+    <img id="img-quiet" src="value_images/quiet.svg" height="128pt"/>
+    <div class="bar quiet" id="bar-quiet"><div class="text-wrapper" id="quiet"></div></div>
+    <div class="bar enthusiastic" id="bar-enthusiastic"><div class="text-wrapper" id="enthusiastic"></div></div>
+    <img id="img-enthusiastic" src="value_images/enthusiastic.svg" height="128pt"/>
+</div>
+<h2>Compassion Axis: <span class="weight-300" id="c-label"></span></h2>
+<div class="axis">
+    <img id="img-compassionate" src="value_images/compassionate.svg" height="128pt"/>
+    <div class="bar compassionate" id="bar-compassionate"><div class="text-wrapper" id="compassionate"></div></div>
+    <div class="bar cruel" id="bar-cruel"><div class="text-wrapper" id="cruel"></div></div>
+    <img id="img-cruel" src="value_images/cruel.svg" height="128pt"/>
+</div>
+<h2>Politeness Axis: <span class="weight-300" id="p-label"></span></h2>
+<div class="axis">
+    <img id="img-vulgar" src="value_images/vulgar.svg" height="128pt"/>
+    <div class="bar vulgar" id="bar-vulgar"><div class="text-wrapper" id="vulgar"></div></div>
+    <div class="bar polite" id="bar-polite"><div class="text-wrapper" id="polite"></div></div>
+    <img id="img-polite" src="value_images/polite.svg" height="128pt"/>
+</div>
+<h2>Industriousness Axis: <span class="weight-300" id="i-label"></span></h2>
+<div class="axis">
+    <img id="img-laidback" src="value_images/laidback.svg" height="128pt"/>
+    <div class="bar laidback" id="bar-laidback"><div class="text-wrapper" id="laidback"></div></div>
+    <div class="bar industrious" id="bar-industrious"><div class="text-wrapper" id="industrious"></div></div>
+    <img id="img-industrious" src="value_images/industrious.svg" height="128pt"/>
+</div>
+<h2>Orderliness Axis: <span class="weight-300" id="o-label"></span></h2>
+<div class="axis">
+    <img id="img-chaotic" src="value_images/chaotic.svg" height="128pt"/>
+    <div class="bar chaotic" id="bar-chaotic"><div class="text-wrapper" id="chaotic"></div></div>
+    <div class="bar orderly" id="bar-orderly"><div class="text-wrapper" id="orderly"></div></div>
+    <img id="img-orderly" src="value_images/orderly.svg" height="128pt"/>
+</div>
+<h2>Withdrawal Axis: <span class="weight-300" id="w-label"></span></h2>
+<div class="axis">
+    <img id="img-bold" src="value_images/bold.svg" height="128pt"/>
+    <div class="bar bold" id="bar-bold"><div class="text-wrapper" id="bold"></div></div>
+    <div class="bar withdrawn" id="bar-withdrawn"><div class="text-wrapper" id="withdrawn"></div></div>
+    <img id="img-withdrawn" src="value_images/withdrawn.svg" height="128pt"/>
+</div>
+<h2>Volatility Axis: <span class="weight-300" id="v-label"></span></h2>
+<div class="axis">
+    <img id="img-stable" src="value_images/stable.svg" height="128pt"/>
+    <div class="bar stable" id="bar-stable"><div class="text-wrapper" id="stable"></div></div>
+    <div class="bar volatile" id="bar-volatile"><div class="text-wrapper" id="volatile"></div></div>
+    <img id="img-volatile" src="value_images/volatile.svg" height="128pt"/>
+</div>
+<h2>Intellect Axis: <span class="weight-300" id="n-label"></span></h2>
+<div class="axis">
+    <img id="img-ignorant" src="value_images/ignorant.svg" height="128pt"/>
+    <div class="bar ignorant" id="bar-ignorant"><div class="text-wrapper" id="ignorant"></div></div>
+    <div class="bar intellectual" id="bar-intellectual"><div class="text-wrapper" id="intellectual"></div></div>
+    <img id="img-intellectual" src="value_images/intellectual.svg" height="128pt"/>
+</div>
+<h2>Openness Axis: <span class="weight-300" id="x-label"></span></h2>
+<div class="axis">
+    <img id="img-closed" src="value_images/closed.svg" height="128pt"/>
+    <div class="bar closed" id="bar-closed"><div class="text-wrapper" id="closed"></div></div>
+    <div class="bar open" id="bar-open"><div class="text-wrapper" id="open"></div></div>
+    <img id="img-open" src="value_images/open.svg" height="128pt"/>
+</div>
+<h2>Closest Match: <span class="weight-300" id="char-label"></span></h2>
+<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
+<hr/>
+<img src="" id="banner">
+<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
+<!-- Website visit statistics - no personal information is collected! -->
+<script type="text/javascript">
+var sc_project=11325211;
+var sc_invisible=1;
+var sc_security="fd9f0659";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
+stats"></a></div></noscript>
+<script>
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1)
+           var vars = query.split("&")
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=")
+                   if(pair[0] == variable) {return pair[1]}
+           }
+           return(NaN);
+    }
+
+    function setBarValue(name, value) {
+        innerel = document.getElementById(name)
+        outerel = document.getElementById("bar-" + name)
+        outerel.style.width = (value + "%")
+        innerel.innerHTML = (value + "%")
+        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
+            innerel.style.visibility = "hidden"
+        }
+    }
+
+    aArray = ["Sparky","Assertive","Active","Moderate","Indifferent","Passive","Asleep"]
+    eArray = ["Hyperthymic","Enthusiastic","Lively","Balanced","Quiet","Reluctant","Disthymic"]
+    cArray = ["Bleeding-Heart","Empathetic","Sympathetic","Balanced","Unfeeling","Cruel","Barbaric"]
+    pArray = ["Pacifist","Diplomatic","Civil","Neutral","Rough","Rude","Enemy"]
+	iArray = ["Worker Ant","Industrious","Concentrated","Neutral","Idle","Laid-Back","Slacker"]
+	oArray = ["Order Freak","Formal","Orderly","Balanced","Unpredictable","Chaotic","Entropic"]
+	wArray = ["Cowardly","Distressed","Anxious","Situational","Content","Brave","Fearless"]
+	vArray = ["Destructive","Volatile","Unstable","Situational","Stable","Calm","Tranquil"]
+	nArray = ["Brainiac","Intellectual","Curious","Balanced","Practical","Unsophisticated","Small-Minded"]
+	xArray = ["Otherworldly","Creative","Open-Minded","Balanced","Traditional","Intolerant","Fundamentalist"]
+
+    function setLabel(val,ary) {
+        if (val > 100) { return "" } else
+        if (val > 90) { return ary[0] } else
+        if (val > 75) { return ary[1] } else
+        if (val > 60) { return ary[2] } else
+        if (val >= 40) { return ary[3] } else
+        if (val >= 25) { return ary[4] } else
+        if (val >= 10) { return ary[5] } else
+        if (val >= 0) { return ary[6] } else
+        	{return ""}
+    }
+
+    assertive  = getQueryVariable("a")
+    enthusiastic     = getQueryVariable("e")
+    compassionate   = getQueryVariable("c")
+    polite  = getQueryVariable("p")
+	industrious  = getQueryVariable("i")
+    orderly     = getQueryVariable("o")
+    withdrawn   = getQueryVariable("w")
+    volatile  = getQueryVariable("v")
+	intellectual   = getQueryVariable("n")
+    open  = getQueryVariable("x")
+    passive    = (100 - assertive).toFixed(1)
+    quiet     = (100 - enthusiastic).toFixed(1)
+    cruel = (100 - compassionate).toFixed(1)
+    vulgar = (100 - polite).toFixed(1)
+	laidback = (100 - industrious).toFixed(1)
+	chaotic = (100 - orderly).toFixed(1)
+	bold = (100 - withdrawn).toFixed(1)
+	stable = (100 - volatile).toFixed(1)
+	ignorant = (100 - intellectual).toFixed(1)
+	close = (100 - open).toFixed(1)
+
+    setBarValue("assertive", assertive)
+    setBarValue("passive", passive)
+    setBarValue("enthusiastic", enthusiastic)
+    setBarValue("quiet", quiet)
+    setBarValue("compassionate", compassionate)
+    setBarValue("cruel", cruel)
+    setBarValue("polite", polite)
+    setBarValue("vulgar", vulgar)
+	setBarValue("industrious", industrious)
+    setBarValue("laidback", laidback)
+	setBarValue("orderly", orderly)
+    setBarValue("chaotic", chaotic)
+	setBarValue("withdrawn", withdrawn)
+    setBarValue("bold", bold)
+	setBarValue("volatile", volatile)
+    setBarValue("stable", stable)
+	setBarValue("intellectual", intellectual)
+    setBarValue("ignorant", ignorant)
+	setBarValue("open", open)
+    setBarValue("closed", close)
+
+    document.getElementById("a-label").innerHTML = setLabel(assertive, aArray)
+    document.getElementById("e-label").innerHTML = setLabel(enthusiastic, eArray)
+    document.getElementById("c-label").innerHTML = setLabel(compassionate, cArray)
+    document.getElementById("p-label").innerHTML = setLabel(polite, pArray)
+	document.getElementById("i-label").innerHTML = setLabel(industrious, iArray)
+	document.getElementById("o-label").innerHTML = setLabel(orderly, oArray)
+	document.getElementById("w-label").innerHTML = setLabel(withdrawn, wArray)
+	document.getElementById("v-label").innerHTML = setLabel(volatile, vArray)
+	document.getElementById("n-label").innerHTML = setLabel(intellectual, nArray)
+	document.getElementById("x-label").innerHTML = setLabel(open, xArray)
+
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.e - enthusiastic), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.p - polite), 1.73856063)
+		dist += Math.pow(Math.abs(ideologies[i].stats.i - industrious), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.x - open), 2)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+
+   
+    </script>
+</body>
