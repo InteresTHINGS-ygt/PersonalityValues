@@ -269,4 +269,49 @@ questions = [
 			"x": 0
         }
     }
+	  {
+        "question": "Others’ feelings become my own feelings.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 20,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 0
+        }
+    }
+	  {
+        "question": "Others’ feelings become my own feelings.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 20,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 0
+        }
+    }
+	  {
+        "question": "Others’ feelings become my own feelings.",
+        "effect": {
+            "a": 0,
+            "e": 0,
+            "c": 20,
+            "p": 0,
+			"i": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
+			"x": 0
+        }
+    }
 ];
