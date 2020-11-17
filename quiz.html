@@ -48,10 +48,10 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_a, max_e, max_c, max_p, max_i, max_o, max_w, max_v, max_n, max_x; // Max possible scores
-    max_a = max_e = max_c = max_p = max_i = max_o = max_w = max_v = max_n = max_x = 0;
-    var a, e, c, p, i, o, w, v, n, x; // User's scores
-    a = e = c = p = i = o = w = v = n = x = 0;
+    var max_a, max_e, max_c, max_p, max_s, max_o, max_w, max_v, max_n, max_x; // Max possible scores
+    max_a = max_e = max_c = max_p = max_s = max_o = max_w = max_v = max_n = max_x = 0;
+    var a, e, c, p, s, o, w, v, n, x; // User's scores
+    a = e = c = p = s = o = w = v = n = x = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -60,7 +60,7 @@ stats"></a></div></noscript>
         max_e += Math.abs(questions[i].effect.e)
         max_c += Math.abs(questions[i].effect.c)
         max_p += Math.abs(questions[i].effect.p)
-		max_i += Math.abs(questions[i].effect.i)
+		max_s += Math.abs(questions[i].effect.s)
 		max_o += Math.abs(questions[i].effect.o)
 		max_w += Math.abs(questions[i].effect.w)
 		max_v += Math.abs(questions[i].effect.v)
@@ -85,7 +85,7 @@ stats"></a></div></noscript>
         e += mult*questions[qn].effect.e
         c += mult*questions[qn].effect.c
         p += mult*questions[qn].effect.p
-		i += mult*questions[qn].effect.i
+		s += mult*questions[qn].effect.s
 		o += mult*questions[qn].effect.o
 		w += mult*questions[qn].effect.w
 		v += mult*questions[qn].effect.v
@@ -108,7 +108,7 @@ stats"></a></div></noscript>
         e -= prev_answer * questions[qn].effect.e;
         c -= prev_answer * questions[qn].effect.c;
         p -= prev_answer * questions[qn].effect.p;
-		i -= prev_answer * questions[qn].effect.i;
+		s -= prev_answer * questions[qn].effect.s;
 		o -= prev_answer * questions[qn].effect.o;
 		w -= prev_answer * questions[qn].effect.w;
 		v -= prev_answer * questions[qn].effect.v;
@@ -127,7 +127,7 @@ stats"></a></div></noscript>
             + `&e=${calc_score(e,max_e)}`
             + `&c=${calc_score(c,max_c)}`
             + `&p=${calc_score(p,max_p)}`
-			+ `&i=${calc_score(i,max_i)}`
+			+ `&s=${calc_score(s,max_s)}`
 			+ `&o=${calc_score(o,max_o)}`
 			+ `&w=${calc_score(w,max_w)}`
 			+ `&v=${calc_score(v,max_v)}`
