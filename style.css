@@ -141,23 +141,23 @@ div.text-wrapper {
 }
 div.assertive {
     background-color: #ff6a00;
-    text-align: left;
-    border-right-style: solid;
+    text-align: right;
+    border-left-style: solid;
 }
 div.passive {
     background-color: #8e5dc7;
-    text-align: right;
-    border-left-style: solid;
-}
-div.compassionate {
-    background-color: #cf00b3;
     text-align: left;
     border-right-style: solid;
 }
-div.cruel {
-    background-color: #614242;
+div.compassionate {
+    background-color: #cf00b3;
     text-align: right;
     border-left-style: solid;
+}
+div.cruel {
+    background-color: #614242;
+    text-align: left;
+    border-right-style: solid;
 }
 div.enthusiastic {
     background-color: #ffff00;

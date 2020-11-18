@@ -18,6 +18,18 @@
 <script type="application/javascript"
         src="mbtitypes.js">
 </script>
+<script type="application/javascript"
+        src="hogwartshouses.js">
+</script>
+<script type="application/javascript"
+        src="ilvermornyhouses.js">
+</script>
+<script type="application/javascript"
+        src="enneagramtypes.js">
+</script>
+<script type="application/javascript"
+        src="zodiacsigns.js">
+</script>
 
 <body>
 <h1>PersonalityValues</h1>
@@ -27,10 +39,10 @@
 
 <h2>Assertiveness Axis: <span class="weight-300" id="a-label"></span></h2>
 <div class="axis">
-    <img id="img-assertive" src="value_images/assertive.png" height="128pt"/>
-    <div class="bar assertive" id="bar-assertive"><div class="text-wrapper" id="assertive"></div></div>
-    <div class="bar passive" id="bar-passive"><div class="text-wrapper" id="passive"></div></div>
     <img id="img-passive" src="value_images/passive.png" height="128pt"/>
+    <div class="bar passive" id="bar-passive"><div class="text-wrapper" id="passive"></div></div>
+	<div class="bar assertive" id="bar-assertive"><div class="text-wrapper" id="assertive"></div></div>
+    <img id="img-assertive" src="value_images/assertive.png" height="128pt"/>
 </div>
 <h2>Enthusiasm Axis: <span class="weight-300" id="e-label"></span></h2>
 <div class="axis">
@@ -41,10 +53,10 @@
 </div>
 <h2>Compassion Axis: <span class="weight-300" id="c-label"></span></h2>
 <div class="axis">
-    <img id="img-compassionate" src="value_images/compassionate.png" height="128pt"/>
-    <div class="bar compassionate" id="bar-compassionate"><div class="text-wrapper" id="compassionate"></div></div>
+	<img id="img-cruel" src="value_images/cruel.png" height="128pt"/>
     <div class="bar cruel" id="bar-cruel"><div class="text-wrapper" id="cruel"></div></div>
-    <img id="img-cruel" src="value_images/cruel.png" height="128pt"/>
+	<div class="bar compassionate" id="bar-compassionate"><div class="text-wrapper" id="compassionate"></div></div>
+    <img id="img-compassionate" src="value_images/compassionate.png" height="128pt"/>
 </div>
 <h2>Politeness Axis: <span class="weight-300" id="p-label"></span></h2>
 <div class="axis">
@@ -95,9 +107,13 @@
     <div class="bar open" id="bar-open"><div class="text-wrapper" id="open"></div></div>
     <img id="img-open" src="value_images/open.png" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<h2>Closest Level: <span class="weight-300" id="level-label"></span></h2>
-<h2>Closest MBTI Type: <span class="weight-300" id="mbti-label"></span></h2>
+<h2>Character: <span class="weight-300" id="ideology-label"></span></h2>
+<h2>Level: <span class="weight-300" id="level-label"></span></h2>
+<h2>MBTI Type: <span class="weight-300" id="mbti-label"></span></h2>
+<h2>Enneagram Type: <span class="weight-300" id="enneagram-label"></span></h2>
+<h2>Hogwarts: <span class="weight-300" id="hogwarts-label"></span></h2>
+<h2>Ilvermorny: <span class="weight-300" id="ilvermorny-label"></span></h2>
+<h2>Zodiac: <span class="weight-300" id="zodiac-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
@@ -279,6 +295,69 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("mbti-label").innerHTML = mbti
+	
+	hogwarts = ""
+    hogwartsdist = Infinity
+    for (var i = 0; i < hogwartshouses.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(hogwartshouses[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(hogwartshouses[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(hogwartshouses[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(hogwartshouses[i].stats.x - open), 2)
+        if (dist < hogwartsdist) {
+            hogwarts = hogwartshouses[i].name
+            hogwartsdist = dist
+        }
+    }
+    document.getElementById("hogwarts-label").innerHTML = hogwarts
+	
+	ilvermorny = ""
+    ilvermornydist = Infinity
+    for (var i = 0; i < ilvermornyhouses.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(ilvermornyhouses[i].stats.x - open), 2)
+        if (dist < ilvermornydist) {
+            ilvermorny = ilvermornyhouses[i].name
+            ilvermornydist = dist
+        }
+    }
+    document.getElementById("ilvermorny-label").innerHTML = ilvermorny
+	
+	zodiac = ""
+    zodiacdist = Infinity
+    for (var i = 0; i < zodiacsigns.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(zodiacsigns[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(zodiacsigns[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(zodiacsigns[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(zodiacsigns[i].stats.x - open), 2)
+        if (dist < zodiacdist) {
+            zodiac = zodiacsigns[i].name
+            zodiacdist = dist
+        }
+    }
+    document.getElementById("zodiac-label").innerHTML = zodiac
 
    
     </script>
