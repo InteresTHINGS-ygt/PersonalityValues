@@ -12,6 +12,12 @@
 <script type="application/javascript"
         src="ideologies.js">
 </script>
+<script type="application/javascript"
+        src="levels.js">
+</script>
+<script type="application/javascript"
+        src="mbtitypes.js">
+</script>
 
 <body>
 <h1>PersonalityValues</h1>
@@ -89,7 +95,9 @@
     <div class="bar open" id="bar-open"><div class="text-wrapper" id="open"></div></div>
     <img id="img-open" src="value_images/open.png" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="char-label"></span></h2>
+<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<h2>Closest Level: <span class="weight-300" id="level-label"></span></h2>
+<h2>Closest MBTI Type: <span class="weight-300" id="mbti-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
@@ -215,8 +223,8 @@ stats"></a></div></noscript>
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - assertive), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.c - compassionate), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.e - enthusiastic), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.p - polite), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.p - polite), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.s - industrious), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.o - orderly), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.w - withdrawn), 2)
@@ -229,6 +237,48 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
+	
+	level = ""
+    leveldist = Infinity
+    for (var i = 0; i < levels.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(levels[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(levels[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(levels[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(levels[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(levels[i].stats.x - open), 2)
+        if (dist < leveldist) {
+            level = levels[i].name
+            leveldist = dist
+        }
+    }
+    document.getElementById("level-label").innerHTML = level
+	
+	mbti = ""
+    mbtidist = Infinity
+    for (var i = 0; i < mbtitypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(mbtitypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(mbtitypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(mbtitypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(mbtitypes[i].stats.x - open), 2)
+        if (dist < mbtidist) {
+            mbti = mbtitypes[i].name
+            mbtidist = dist
+        }
+    }
+    document.getElementById("mbti-label").innerHTML = mbti
 
    
     </script>
