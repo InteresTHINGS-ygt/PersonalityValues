@@ -33,7 +33,7 @@
 
 <body>
 <h1>PersonalityValues</h1>
-<hr>
+
 
 <h1>Results</h1>
 
@@ -114,9 +114,7 @@
 <h2>Hogwarts: <span class="weight-300" id="hogwarts-label"></span></h2>
 <h2>Ilvermorny: <span class="weight-300" id="ilvermorny-label"></span></h2>
 <h2>Zodiac: <span class="weight-300" id="zodiac-label"></span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
-<hr/>
+
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 <!-- Website visit statistics - no personal information is collected! -->
@@ -295,6 +293,27 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("mbti-label").innerHTML = mbti
+	
+	enneagram = ""
+    enneagramdist = Infinity
+    for (var i = 0; i < enneagramtypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(enneagramtypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(enneagramtypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(enneagramtypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(enneagramtypes[i].stats.x - open), 2)
+        if (dist < enneagramdist) {
+            enneagram = enneagramtypes[i].name
+            enneagramdist = dist
+        }
+    }
+    document.getElementById("enneagram-label").innerHTML = enneagram
 	
 	hogwarts = ""
     hogwartsdist = Infinity
