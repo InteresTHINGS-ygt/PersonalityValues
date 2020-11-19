@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'RockyMutation';
+    src: url('RockyMutation.woff2') format('woff2'),
+        url('RockyMutation.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
-    background-color: #005230;
+    background-color: #bbbbbb;
     padding: 0px;
 }
 body {
@@ -7,15 +16,15 @@ body {
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #005230;
-    border-color: #005230;
+    background-color: #dddddd;
+    border-color: #eeeeee;
     border-left-style: solid;
     border-right-style: solid;
     border-width: 20px;
 }
 p {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    color: #444444;
+    font-family: 'RockyMutation', sans-serif;
     font-size: 16pt;
     line-height: 1;
     margin: 4pt;
@@ -26,13 +35,13 @@ p.value-description {
 }
 p.question {
     margin: 16pt auto;
-    color: #6bffc2;
-    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-family: 'RockyMutation', sans-serif;
     font-weight: normal;
     width: 70%;
     min-width: 500pt;
     min-height: 144pt;
-    background-color: #005230;
+    background-color: #eeeeee;
     padding: 16pt;
     border-radius: 16pt;
     font-size: 36pt;
@@ -43,8 +52,8 @@ p.question {
 
 }
 h1 {
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-family: 'RockyMutation', sans-serif;
     font-size: 72pt;
     text-align: center;
     line-height: 72pt;
@@ -52,8 +61,8 @@ h1 {
     margin-bottom: 0pt;
 }
 h2 {
-    color: #6bffc2;
-    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-family: 'RockyMutation', sans-serif;
     font-size: 36pt;
     line-height: 36pt;
     margin-top: 12pt;
@@ -73,8 +82,8 @@ img.center {
     min-width: 500pt;
 }
 .button {
-    background-color: #00ffe5;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #2196f3;
+    font-family: 'RockyMutation', sans-serif;
     border: none;
     border-radius: 8pt;
     color: white;
@@ -90,7 +99,7 @@ img.center {
 }
 .small_button, .small_button_off {
     background-color: #333;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'RockyMutation', sans-serif;
     border: none;
     border-radius: 8pt;
     color: white;
@@ -105,8 +114,9 @@ img.center {
     cursor: pointer;
 }
 .small_button_off {
-    background-color: #999;
-    color: #555;
+    background-color: #ddd;
+    color: #888;
+    border: 2px solid #888;
     cursor: not-allowed;
     margin: -4px auto;
 }
@@ -122,8 +132,8 @@ div.bar {
     padding: 8pt;
     margin-top: 4pt;
     margin-bottom: 4pt;
-    border-width: 0px;
-    border-right-width: 0px;
+    border-width: 4px;
+    border-right-width: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-color: #222222;
@@ -132,31 +142,31 @@ div.bar {
     width: 50%;
 }
 div.text-wrapper {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'RockyMutation', sans-serif;
     font-size: 36pt;
     line-height: 36pt;
-    color: #ffffff;
+    color: #222222;
     display: inline-block;
 }
 div.assertive {
     background-color: #ff6a00;
-    text-align: right;
-    border-left-style: solid;
+    text-align: left;
+    border-right-style: solid;
 }
 div.passive {
     background-color: #8e5dc7;
-    text-align: left;
-    border-right-style: solid;
-}
-div.compassionate {
-    background-color: #cf00b3;
     text-align: right;
     border-left-style: solid;
 }
-div.cruel {
-    background-color: #614242;
+div.compassionate {
+    background-color: #cf00b3;
     text-align: left;
     border-right-style: solid;
+}
+div.cruel {
+    background-color: #614242;
+    text-align: right;
+    border-left-style: solid;
 }
 div.enthusiastic {
     background-color: #ffff00;
@@ -242,7 +252,7 @@ span.weight-300 {
     font-weight: 300;
 }
 #banner {
-    border-color: #005230;
+    border-color: #444444;
     border-style: solid;
     border-width: 2px;
     border-radius: 8pt;
