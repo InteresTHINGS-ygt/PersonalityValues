@@ -30,6 +30,28 @@
 <script type="application/javascript"
         src="zodiacsigns.js">
 </script>
+<script type="application/javascript"
+        src="archetypes.js">
+</script>
+<script type="application/javascript"
+        src="epigenotypes.js">
+</script>
+<script type="application/javascript"
+        src="bloodtypes.js">
+</script>
+<script type="application/javascript"
+        src="pokemontypes.js">
+</script>
+<script type="application/javascript"
+        src="fragrances.js">
+</script>
+<script type="application/javascript"
+        src="youtubers.js">
+</script>
+<script type="application/javascript"
+        src="tvcharacters.js">
+</script>
+
 
 <body>
 <h1>PersonalityValues</h1>
@@ -107,13 +129,20 @@
     <div class="bar open" id="bar-open"><div class="text-wrapper" id="open"></div></div>
     <img id="img-open" src="value_images/open.png" height="128pt"/>
 </div>
-<h2>Character: <span class="weight-300" id="ideology-label"></span></h2>
-<h2>Level: <span class="weight-300" id="level-label"></span></h2>
+<h2>Ideology: <span class="weight-300" id="ideology-label"></span></h2>
+<h2>Geometry Dash Level: <span class="weight-300" id="level-label"></span></h2>
 <h2>MBTI Type: <span class="weight-300" id="mbti-label"></span></h2>
 <h2>Enneagram Type: <span class="weight-300" id="enneagram-label"></span></h2>
 <h2>Hogwarts: <span class="weight-300" id="hogwarts-label"></span></h2>
 <h2>Ilvermorny: <span class="weight-300" id="ilvermorny-label"></span></h2>
 <h2>Zodiac: <span class="weight-300" id="zodiac-label"></span></h2>
+<h2>Archetype: <span class="weight-300" id="archetype-label"></span></h2>
+<h2>Epigenotype: <span class="weight-300" id="epigenotype-label"></span></h2>
+<h2>Blood Type: <span class="weight-300" id="bloodtype-label"></span></h2>
+<h2>Pokemon: <span class="weight-300" id="pokemontype-label"></span></h2>
+<h2>Fragrance: <span class="weight-300" id="fragrance-label"></span></h2>
+<h2>Youtuber: <span class="weight-300" id="youtuber-label"></span></h2>
+<h2>Youtuber: <span class="weight-300" id="tvcharacter-label"></span></h2>
 
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -377,6 +406,154 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("zodiac-label").innerHTML = zodiac
+	
+	archetype = ""
+    archetypedist = Infinity
+    for (var i = 0; i < archetypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(archetypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(archetypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(archetypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(archetypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(archetypes[i].stats.x - open), 2)
+        if (dist < archetypedist) {
+            archetype = archetypes[i].name
+            archetypedist = dist
+        }
+    }
+    document.getElementById("archetype-label").innerHTML = archetype
+	
+	epigenotype = ""
+    epigenotypedist = Infinity
+    for (var i = 0; i < epigenotypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(epigenotypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(epigenotypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(epigenotypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(epigenotypes[i].stats.x - open), 2)
+        if (dist < epigenotypedist) {
+            epigenotype = epigenotypes[i].name
+            epigenotypedist = dist
+        }
+    }
+    document.getElementById("epigenotype-label").innerHTML = epigenotype
+	
+	bloodtype = ""
+    bloodtypedist = Infinity
+    for (var i = 0; i < bloodtypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(bloodtypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(bloodtypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(bloodtypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(bloodtypes[i].stats.x - open), 2)
+        if (dist < bloodtypedist) {
+            bloodtype = bloodtypes[i].name
+            bloodtypedist = dist
+        }
+    }
+    document.getElementById("bloodtype-label").innerHTML = bloodtype
+	
+	pokemontype = ""
+    pokemontypedist = Infinity
+    for (var i = 0; i < pokemontypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(pokemontypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(pokemontypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(pokemontypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(pokemontypes[i].stats.x - open), 2)
+        if (dist < pokemontypedist) {
+            pokemontype = pokemontypes[i].name
+            pokemontypedist = dist
+        }
+    }
+    document.getElementById("pokemontype-label").innerHTML = pokemontype
+	
+	fragrance = ""
+    fragrancedist = Infinity
+    for (var i = 0; i < fragrances.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(fragrances[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(fragrances[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(fragrances[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(fragrances[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(fragrances[i].stats.x - open), 2)
+        if (dist < fragrancedist) {
+            fragrance = fragrances[i].name
+            fragrancedist = dist
+        }
+    }
+    document.getElementById("fragrance-label").innerHTML = fragrance
+	
+	youtuber = ""
+    youtuberdist = Infinity
+    for (var i = 0; i < youtubers.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(youtubers[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(youtubers[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(youtubers[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(youtubers[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(youtubers[i].stats.x - open), 2)
+        if (dist < youtuberdist) {
+            youtuber = youtubers[i].name
+            youtuberdist = dist
+        }
+    }
+    document.getElementById("youtuber-label").innerHTML = youtuber
+	
+	tvcharacter = ""
+    tvcharacterdist = Infinity
+    for (var i = 0; i < tvcharacters.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(tvcharacters[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(tvcharacters[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(tvcharacters[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(tvcharacters[i].stats.x - open), 2)
+        if (dist < tvcharacterdist) {
+            tvcharacter = tvcharacters[i].name
+            tvcharacterdist = dist
+        }
+    }
+    document.getElementById("tvcharacter-label").innerHTML = tvcharacter
+
 
    
     </script>
