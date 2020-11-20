@@ -51,6 +51,22 @@
 <script type="application/javascript"
         src="tvcharacters.js">
 </script>
+<script type="application/javascript"
+        src="somatotypes.js">
+</script>
+<script type="application/javascript"
+        src="temperaments.js">
+</script>
+<script type="application/javascript"
+        src="disctypes.js">
+</script>
+<script type="application/javascript"
+        src="keirseys.js">
+</script>
+<script type="application/javascript"
+        src="alignments.js">
+</script>
+
 
 
 <body>
@@ -132,6 +148,7 @@
 <h2>Ideology: <span class="weight-300" id="ideology-label"></span></h2>
 <h2>Geometry Dash Level: <span class="weight-300" id="level-label"></span></h2>
 <h2>MBTI Type: <span class="weight-300" id="mbti-label"></span></h2>
+<h2>Keirsey: <span class="weight-300" id="keirsey-label"></span></h2>
 <h2>Enneagram Type: <span class="weight-300" id="enneagram-label"></span></h2>
 <h2>Hogwarts: <span class="weight-300" id="hogwarts-label"></span></h2>
 <h2>Ilvermorny: <span class="weight-300" id="ilvermorny-label"></span></h2>
@@ -143,6 +160,10 @@
 <h2>Fragrance: <span class="weight-300" id="fragrance-label"></span></h2>
 <h2>Youtuber: <span class="weight-300" id="youtuber-label"></span></h2>
 <h2>TV Character: <span class="weight-300" id="tvcharacter-label"></span></h2>
+<h2>Somatotype: <span class="weight-300" id="somatotype-label"></span></h2>
+<h2>Temperament: <span class="weight-300" id="temperament-label"></span></h2>
+<h2>DiSC Type: <span class="weight-300" id="disctype-label"></span></h2>
+<h2>Alignment: <span class="weight-300" id="alignment-label"></span></h2>
 
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -553,6 +574,111 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("tvcharacter-label").innerHTML = tvcharacter
+	
+	somatotype = ""
+    somatotypedist = Infinity
+    for (var i = 0; i < somatotypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(somatotypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(somatotypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(somatotypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(somatotypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(somatotypes[i].stats.x - open), 2)
+        if (dist < somatotypedist) {
+            somatotype = somatotypes[i].name
+            somatotypedist = dist
+        }
+    }
+    document.getElementById("somatotype-label").innerHTML = somatotype
+	
+	temperament = ""
+    temperamentdist = Infinity
+    for (var i = 0; i < temperaments.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(temperaments[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(temperaments[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(temperaments[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(temperaments[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(temperaments[i].stats.x - open), 2)
+        if (dist < temperamentdist) {
+            temperament = temperaments[i].name
+            temperamentdist = dist
+        }
+    }
+    document.getElementById("temperament-label").innerHTML = temperament
+	
+	disctype = ""
+    disctypedist = Infinity
+    for (var i = 0; i < disctypes.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(disctypes[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(disctypes[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(disctypes[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(disctypes[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(disctypes[i].stats.x - open), 2)
+        if (dist < disctypedist) {
+            disctype = disctypes[i].name
+            disctypedist = dist
+        }
+    }
+    document.getElementById("disctype-label").innerHTML = disctype
+	
+	keirsey = ""
+    keirseydist = Infinity
+    for (var i = 0; i < keirseys.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(keirseys[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(keirseys[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(keirseys[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(keirseys[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(keirseys[i].stats.x - open), 2)
+        if (dist < keirseydist) {
+            keirsey = keirseys[i].name
+            keirseydist = dist
+        }
+    }
+    document.getElementById("keirsey-label").innerHTML = keirsey
+	
+	alignment = ""
+    alignmentdist = Infinity
+    for (var i = 0; i < alignments.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(alignments[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(alignments[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(alignments[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(alignments[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(alignments[i].stats.x - open), 2)
+        if (dist < alignmentdist) {
+            alignment = alignments[i].name
+            alignmentdist = dist
+        }
+    }
+    document.getElementById("alignment-label").innerHTML = alignment
 
 
    
