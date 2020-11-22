@@ -66,6 +66,9 @@
 <script type="application/javascript"
         src="alignments.js">
 </script>
+<script type="application/javascript"
+        src="ipipneos.js">
+</script>
 
 
 
@@ -164,6 +167,7 @@
 <h2>Temperament: <span class="weight-300" id="temperament-label"></span></h2>
 <h2>DiSC Type: <span class="weight-300" id="disctype-label"></span></h2>
 <h2>Alignment: <span class="weight-300" id="alignment-label"></span></h2>
+<h2>IPIP-NEO Pattern: <span class="weight-300" id="ipipneo-label"></span></h2>
 
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -679,6 +683,27 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("alignment-label").innerHTML = alignment
+	
+	ipipneo = ""
+    ipipneodist = Infinity
+    for (var i = 0; i < ipipneos.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ipipneos[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(ipipneos[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(ipipneos[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(ipipneos[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(ipipneos[i].stats.x - open), 2)
+        if (dist < ipipneodist) {
+            ipipneo = ipipneos[i].name
+            ipipneodist = dist
+        }
+    }
+    document.getElementById("ipipneo-label").innerHTML = ipipneo
 
 
    
