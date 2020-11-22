@@ -105,7 +105,7 @@ ipipneos = [
         }
     },
 	{
-        "name": Apathetic",
+        "name": "Apathetic",
         "stats": {
             "a": 10,
             "e": 0,
@@ -135,7 +135,7 @@ ipipneos = [
         }
     },
 	{
-        "name": Moody-Manic",
+        "name": "Moody-Manic",
         "stats": {
             "a": 80,
             "e": 80,
