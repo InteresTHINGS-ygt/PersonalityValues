@@ -1,6 +1,6 @@
 questions = [
     {
-        "question": "I like to have some excitement in my life.",
+        "question": "I like to have a bit of a thrill in my life.",
         "effect": {
             "a": 5,
             "e": 0,
@@ -60,7 +60,7 @@ questions = [
         }
     },
 	{
-        "question": "I tend to be very sluggish.",
+        "question": "I tend to be very slow and sluggish.",
         "effect": {
             "a": -20,
             "e": 0,
@@ -75,7 +75,7 @@ questions = [
         }
     },
 	    {
-        "question": "I have a very leisurely lifestyle.",
+        "question": "I have a very leisurely and passive lifestyle.",
         "effect": {
             "a": -15,
             "e": 0,
@@ -90,7 +90,7 @@ questions = [
         }
     },
 	    {
-        "question": "I do things with a superhuman speed.",
+        "question": "I do things very vigorously.",
         "effect": {
             "a": 20,
             "e": 0,
@@ -120,7 +120,7 @@ questions = [
         }
     },
 	{
-        "question": "I easily work in a group.",
+        "question": "I like being in a group.",
         "effect": {
             "a": 0,
             "e": 10,
@@ -150,7 +150,7 @@ questions = [
         }
     },
 	    {
-        "question": "I tend to have really high spirits.",
+        "question": "I tend to have boundless energy and a zest for life.",
         "effect": {
             "a": 0,
             "e": 20,
@@ -195,7 +195,7 @@ questions = [
         }
     },
 	    {
-        "question": "I think alone time is a luxury.",
+        "question": "I don't mind being alone all the time.",
         "effect": {
             "a": 0,
             "e": -15,
@@ -210,7 +210,7 @@ questions = [
         }
     },
 	    {
-        "question": "I never feel boredom even with no socializing.",
+        "question": "I never feel boredom without any stimulation.",
         "effect": {
             "a": 0,
             "e": -20,
@@ -285,7 +285,7 @@ questions = [
         }
     },
 	    {
-        "question": "I take care of myself before others.",
+        "question": "I usually take care of myself before others.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -330,7 +330,7 @@ questions = [
         }
     },
 	    {
-        "question": "Others tell me that I lack empathy.",
+        "question": "I tend to lack remorse or guilt.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -345,7 +345,7 @@ questions = [
         }
     },
 	    {
-        "question": "I tend to see people as decent and trustworthy.",
+        "question": "I usually see people as decent and trustworthy.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -360,7 +360,7 @@ questions = [
         }
     },
 	{
-        "question": "I respect the morality.",
+        "question": "I respect the morality and proper ways of behavior.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -405,7 +405,7 @@ questions = [
         }
     },
 	    {
-        "question": "I have an easy time deceiving others.",
+        "question": "I have an easy time deceiving and manipulating others.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -420,7 +420,7 @@ questions = [
         }
     },
 	{
-        "question": "I don’t mind stepping on others to get ahead.",
+        "question": "I don’t mind cheating to get ahead.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -435,7 +435,7 @@ questions = [
         }
     },
 	    {
-        "question": "I see others as my opponents.",
+        "question": "I see others as my opponents or rivals.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -450,7 +450,7 @@ questions = [
         }
     },
 	    {
-        "question": "Politeness is very important for me.",
+        "question": "I tend to be brutally honest.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -465,7 +465,7 @@ questions = [
         }
     },
 	    {
-        "question": "I internally criticize myself if I get rude.",
+        "question": "I internally criticize myself if I ever get rude.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -480,7 +480,7 @@ questions = [
         }
     },
 	{
-        "question": "I live to work hard.",
+        "question": "My life is all about hard work.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -570,7 +570,7 @@ questions = [
         }
     },
 	    {
-        "question": "I see the value in determination.",
+        "question": "I set realistic goals.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -720,7 +720,7 @@ questions = [
         }
     },
 	{
-        "question": "I am paralyzed by anxiety.",
+        "question": "I am paralyzed by uncertainty.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -735,7 +735,7 @@ questions = [
         }
     },
 	    {
-        "question": "I can calm myself down.",
+        "question": "I am capable of feeling contentment.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -825,7 +825,7 @@ questions = [
         }
     },
 	    {
-        "question": "I run around with panic most of the time.",
+        "question": "I never feel happy for things.",
         "effect": {
             "a": 0,
             "e": 0,
