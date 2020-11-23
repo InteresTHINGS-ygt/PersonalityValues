@@ -3,7 +3,7 @@ questions = [
         "question": "I like to have some excitement in my life.",
         "effect": {
             "a": 5,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -18,7 +18,7 @@ questions = [
         "question": "I like to lead or influence others.",
         "effect": {
             "a": 10,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -37,8 +37,8 @@ questions = [
             "c": 0,
             "p": 0,
 			"s": 0,
-			"o": 5,
-			"w": 5,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -51,8 +51,8 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
-			"o": -5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -63,10 +63,10 @@ questions = [
         "question": "I tend to be very sluggish.",
         "effect": {
             "a": -20,
-            "e": -5,
+            "e": 0,
             "c": 0,
             "p": 0,
-			"s": -10,
+			"s": 0,
 			"o": 0,
 			"w": 0,
 			"v": 0,
@@ -81,8 +81,8 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -10,
-			"o": -5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -93,12 +93,12 @@ questions = [
         "question": "I do things with a superhuman speed.",
         "effect": {
             "a": 20,
-            "e": 10,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -113,7 +113,7 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -10,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -122,15 +122,15 @@ questions = [
 	{
         "question": "I easily work in a group.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 10,
-            "c": 5,
-            "p": 5,
-			"s": 5,
+            "c": 0,
+            "p": 0,
+			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -140,10 +140,10 @@ questions = [
             "a": 0,
             "e": 5,
             "c": 0,
-            "p": 5,
+            "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -159,9 +159,9 @@ questions = [
 			"s": 0,
 			"o": 0,
 			"w": 0,
-			"v": 5,
+			"v": 0,
 			"n": 0,
-			"x": 5
+			"x": 0
         }
     },
 	    {
@@ -169,8 +169,8 @@ questions = [
         "effect": {
             "a": 0,
             "e": 15,
-            "c": 5,
-            "p": 5,
+            "c": 0,
+            "p": 0,
 			"s": 0,
 			"o": 0,
 			"w": 0,
@@ -182,7 +182,7 @@ questions = [
 	{
         "question": "I prefer keeping to myself.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": -10,
             "c": 0,
             "p": 0,
@@ -190,7 +190,7 @@ questions = [
 			"o": 0,
 			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -199,13 +199,13 @@ questions = [
         "effect": {
             "a": 0,
             "e": -15,
-            "c": -5,
+            "c": 0,
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
-			"n": 10,
+			"n": 0,
 			"x": 0
         }
     },
@@ -216,11 +216,11 @@ questions = [
             "e": -20,
             "c": 0,
             "p": 0,
-			"s": 5,
-			"o": 5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
-			"v": -10,
-			"n": 10,
+			"v": 0,
+			"n": 0,
 			"x": 0
         }
     },
@@ -230,12 +230,12 @@ questions = [
             "a": 0,
             "e": -5,
             "c": 0,
-            "p": -5,
+            "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": 5,
+			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -245,9 +245,9 @@ questions = [
             "a": 0,
             "e": 0,
             "c": 15,
-            "p": 10,
-			"s": 5,
-			"o": 5,
+            "p": 0,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -263,10 +263,10 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": 5,
-			"v": 5,
+			"w": 0,
+			"v": 0,
 			"n": 0,
-			"x": 10
+			"x": 0
         }
     },
 	    {
@@ -278,21 +278,21 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": 5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
-			"x": 5
+			"x": 0
         }
     },
 	    {
         "question": "I take care of myself before others.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": -10,
             "p": 0,
 			"s": 0,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -305,10 +305,10 @@ questions = [
             "a": 0,
             "e": 0,
             "c": -15,
-            "p": -10,
+            "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -323,7 +323,7 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": 5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -332,16 +332,16 @@ questions = [
 	    {
         "question": "Others tell me that I lack empathy.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": -20,
-            "p": -10,
+            "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
-			"v": 5,
+			"w": 0,
+			"v": 0,
 			"n": 0,
-			"x": -10
+			"x": 0
         }
     },
 	    {
@@ -353,8 +353,8 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
-			"v": -5,
+			"w": 0,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -367,17 +367,17 @@ questions = [
             "c": 0,
             "p": 10,
 			"s": 0,
-			"o": 5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
-			"x": -5
+			"x": 0
         }
     },
 	    {
         "question": "I prefer cooperation over competition.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 5,
@@ -392,14 +392,14 @@ questions = [
 	    {
         "question": "I make myself the center of attention.",
         "effect": {
-            "a": 5,
-            "e": 5,
+            "a": 0,
+            "e": 0,
             "c": 0,
             "p": -5,
 			"s": 0,
 			"o": 0,
 			"w": 0,
-			"v": 5,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -409,13 +409,13 @@ questions = [
         "effect": {
             "a": 0,
             "e": 0,
-            "c": -15,
+            "c": 0,
             "p": -20,
 			"s": 0,
-			"o": -5,
-			"w": -5,
-			"v": 5,
-			"n": 5,
+			"o": 0,
+			"w": 0,
+			"v": 0,
+			"n": 0,
 			"x": 0
         }
     },
@@ -424,11 +424,11 @@ questions = [
         "effect": {
             "a": 0,
             "e": 0,
-            "c": -10,
+            "c": 0,
             "p": -15,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -437,14 +437,14 @@ questions = [
 	    {
         "question": "I see others as my opponents.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": -10,
 			"s": 0,
 			"o": 0,
 			"w": 0,
-			"v": 5,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -456,8 +456,8 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 15,
-			"s": 5,
-			"o": 5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -471,10 +471,10 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 20,
-			"s": 5,
-			"o": 5,
-			"w": 10,
-			"v": 10,
+			"s": 0,
+			"o": 0,
+			"w": 0,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -482,12 +482,12 @@ questions = [
 	{
         "question": "I live to work hard.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 20,
-			"o": 10,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -497,13 +497,13 @@ questions = [
 	    {
         "question": "I sometimes don't work hard enough.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": -5,
 			"o": 0,
-			"w": 5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -512,12 +512,12 @@ questions = [
 	    {
         "question": "I do the bare minimum most of the time.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": -10,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -527,28 +527,28 @@ questions = [
 	    {
         "question": "I try to excel in what I do.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 15,
-			"o": 5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 0
         }
     },
 	{
         "question": "Others see me as a slacker.",
         "effect": {
-            "a": -5,
-            "e": -5,
+            "a": 0,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": -20,
-			"o": -5,
-			"w": 5,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -562,23 +562,23 @@ questions = [
             "c": 0,
             "p": 0,
 			"s": -15,
-			"o": -5,
-			"w": 5,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
-			"x": 5
+			"x": 0
         }
     },
 	    {
         "question": "I see the value in determination.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 5,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -587,13 +587,13 @@ questions = [
 	    {
         "question": "I discipline myself to get things done.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 10,
-			"o": 5,
-			"w": 5,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 0
@@ -603,15 +603,15 @@ questions = [
         "question": "I have a chaotic spirit.",
         "effect": {
             "a": 0,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
+			"s": 0,
 			"o": -20,
 			"w": 0,
-			"v": 5,
+			"v": 0,
 			"n": 0,
-			"x": 10
+			"x": 0
         }
     },
 	    {
@@ -625,7 +625,7 @@ questions = [
 			"o": -15,
 			"w": 0,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -635,7 +635,7 @@ questions = [
             "a": 0,
             "e": 0,
             "c": 0,
-            "p": 5,
+            "p": 0,
 			"s": 0,
 			"o": 5,
 			"w": 0,
@@ -650,13 +650,13 @@ questions = [
             "a": 0,
             "e": 0,
             "c": 0,
-            "p": 5,
+            "p": 0,
 			"s": 0,
 			"o": 10,
 			"w": 0,
 			"v": 0,
-			"n": -5,
-			"x": -5
+			"n": 0,
+			"x": 0
         }
     },
 	{
@@ -668,10 +668,10 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 20,
-			"w": 5,
-			"v": 5,
+			"w": 0,
+			"v": 0,
 			"n": 0,
-			"x": -10
+			"x": 0
         }
     },
 	    {
@@ -681,11 +681,11 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
+			"s": 0,
 			"o": 15,
 			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -696,12 +696,12 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
+			"s": 0,
 			"o": -5,
 			"w": 0,
 			"v": 0,
 			"n": 0,
-			"x": 5
+			"x": 0
         }
     },
 	    {
@@ -709,20 +709,20 @@ questions = [
         "effect": {
             "a": 0,
             "e": 0,
-            "c": -5,
+            "c": 0,
             "p": 0,
 			"s": 0,
 			"o": -10,
 			"w": 0,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
 	{
         "question": "I am paralyzed by anxiety.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
@@ -730,7 +730,7 @@ questions = [
 			"o": 0,
 			"w": 15,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -744,7 +744,7 @@ questions = [
 			"s": 0,
 			"o": 0,
 			"w": -5,
-			"v": -5,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -752,7 +752,7 @@ questions = [
 	    {
         "question": "I easily take big risks.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
@@ -761,20 +761,20 @@ questions = [
 			"w": -15,
 			"v": 0,
 			"n": 0,
-			"x": 10
+			"x": 0
         }
     },
 	    {
         "question": "I never feel depressed or anxious.",
         "effect": {
-            "a": 5,
-            "e": 5,
+            "a": 0,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
 			"o": 0,
 			"w": -20,
-			"v": -5,
+			"v": 0,
 			"n": 0,
 			"x": 0
         }
@@ -783,7 +783,7 @@ questions = [
         "question": "I am satisfied by myself.",
         "effect": {
             "a": 0,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -797,8 +797,8 @@ questions = [
 	    {
         "question": "There are many things that I don’t like about myself.",
         "effect": {
-            "a": -5,
-            "e": -5,
+            "a": 0,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -812,7 +812,7 @@ questions = [
 	    {
         "question": "I don’t feel confident about myself.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
@@ -831,11 +831,11 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
+			"s": 0,
 			"o": 0,
 			"w": 20,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -846,12 +846,12 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
-			"o": 5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": -10,
-			"n": 5,
-			"x": -5
+			"n": 0,
+			"x": 0
         }
     },
 	    {
@@ -861,7 +861,7 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
+			"s": 0,
 			"o": 0,
 			"w": 0,
 			"v": -15,
@@ -876,8 +876,8 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
-			"o": -5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 10,
 			"n": 0,
@@ -887,12 +887,12 @@ questions = [
 	    {
         "question": "When I become angry, it turns into rage.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
-            "c": -5,
-            "p": -5,
+            "c": 0,
+            "p": 0,
 			"s": 0,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 15,
 			"n": 0,
@@ -906,23 +906,23 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
+			"s": 0,
 			"o": 0,
 			"w": 0,
 			"v": 5,
-			"n": -5,
+			"n": 0,
 			"x": 0
         }
     },
 	    {
         "question": "I become destructive under typical stress.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
-            "c": -5,
-            "p": -5,
+            "c": 0,
+            "p": 0,
 			"s": 0,
-			"o": -10,
+			"o": 0,
 			"w": 0,
 			"v": 20,
 			"n": 0,
@@ -932,15 +932,15 @@ questions = [
 	    {
         "question": "I stay calm even in the highest tension.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
-			"o": 5,
-			"w": -10,
+			"o": 0,
+			"w": 0,
 			"v": -20,
-			"n": 5,
+			"n": 0,
 			"x": 0
         }
     },
@@ -950,7 +950,7 @@ questions = [
             "a": 0,
             "e": 0,
             "c": 0,
-            "p": 5,
+            "p": 0,
 			"s": 0,
 			"o": 0,
 			"w": 0,
@@ -962,23 +962,23 @@ questions = [
 	{
         "question": "I am always eager to solve problems.",
         "effect": {
-            "a": 5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
+			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": 15,
-			"x": 5
+			"x": 0
         }
     },
 	    {
         "question": "I enjoy theoretical discussions.",
         "effect": {
             "a": 0,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -986,7 +986,7 @@ questions = [
 			"w": 0,
 			"v": 0,
 			"n": 10,
-			"x": 5
+			"x": 0
         }
     },
 	    {
@@ -996,27 +996,27 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
-			"o": 5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": -5,
-			"x": -5
+			"x": 0
         }
     },
 	    {
         "question": "Thinking about ideas is the bane of my existence.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 20,
-			"x": 10
+			"x": 0
         }
     },
 	{
@@ -1028,7 +1028,7 @@ questions = [
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": 5,
+			"w": 0,
 			"v": 0,
 			"n": -10,
 			"x": 0
@@ -1038,7 +1038,7 @@ questions = [
         "question": "I don’t have much intellectual curiosity.",
         "effect": {
             "a": 0,
-            "e": -5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -1046,14 +1046,14 @@ questions = [
 			"w": 0,
 			"v": 0,
 			"n": -15,
-			"x": -5
+			"x": 0
         }
     },
 	    {
         "question": "I like to research about topics.",
         "effect": {
             "a": 0,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
@@ -1061,7 +1061,7 @@ questions = [
 			"w": 0,
 			"v": 0,
 			"n": 5,
-			"x": 5
+			"x": 0
         }
     },
 	    {
@@ -1071,12 +1071,12 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": -5,
+			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
 			"n": -20,
-			"x": -10
+			"x": 0
         }
     },
 	{
@@ -1085,9 +1085,9 @@ questions = [
             "a": 0,
             "e": 0,
             "c": 0,
-            "p": -5,
+            "p": 0,
 			"s": 0,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -1097,13 +1097,13 @@ questions = [
 	    {
         "question": "I like to daydream and fantasize.",
         "effect": {
-            "a": -5,
+            "a": 0,
             "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
-			"o": -5,
-			"w": 5,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": 10
@@ -1114,13 +1114,13 @@ questions = [
         "effect": {
             "a": 0,
             "e": 0,
-            "c": -5,
+            "c": 0,
             "p": 0,
 			"s": 0,
 			"o": 0,
-			"w": -5,
+			"w": 0,
 			"v": 0,
-			"n": -5,
+			"n": 0,
 			"x": -10
         }
     },
@@ -1128,12 +1128,12 @@ questions = [
         "question": "I prefer staying in the same routine.",
         "effect": {
             "a": 0,
-            "e": -5,
+            "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
-			"o": 10,
-			"w": 5,
+			"s": 0,
+			"o": 0,
+			"w": 0,
 			"v": 0,
 			"n": 0,
 			"x": -15
@@ -1144,13 +1144,13 @@ questions = [
         "effect": {
             "a": 0,
             "e": 0,
-            "c": -5,
+            "c": 0,
             "p": 0,
 			"s": 0,
-			"o": 5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
-			"n": -10,
+			"n": 0,
 			"x": -20
         }
     },
@@ -1158,14 +1158,14 @@ questions = [
         "question": "I am interested in many things.",
         "effect": {
             "a": 0,
-            "e": 5,
+            "e": 0,
             "c": 0,
             "p": 0,
 			"s": 0,
-			"o": -5,
+			"o": 0,
 			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 5
         }
     },
@@ -1176,8 +1176,8 @@ questions = [
             "e": 0,
             "c": 0,
             "p": 0,
-			"s": 5,
-			"o": 5,
+			"s": 0,
+			"o": 0,
 			"w": 0,
 			"v": 0,
 			"n": 0,
@@ -1195,7 +1195,7 @@ questions = [
 			"o": 0,
 			"w": 0,
 			"v": 0,
-			"n": 5,
+			"n": 0,
 			"x": 15
         }
     }
