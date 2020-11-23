@@ -885,7 +885,7 @@ questions = [
         }
     },
 	    {
-        "question": "When I become angry, it turns into rage.",
+        "question": "When I become angry, I struggle controlling it.",
         "effect": {
             "a": 0,
             "e": 0,
@@ -915,7 +915,7 @@ questions = [
         }
     },
 	    {
-        "question": "I become destructive under typical stress.",
+        "question": "I may become destructive under stress.",
         "effect": {
             "a": 0,
             "e": 0,
