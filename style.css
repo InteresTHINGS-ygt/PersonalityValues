@@ -68,6 +68,15 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+h6 {
+    color: #ffffff;
+    font-family: 'RockyMutation', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 6pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
 li {
     font-size: 16pt;
     text-indent: 16pt;
