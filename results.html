@@ -10,116 +10,120 @@
 </script>
 </head>
 <script type="application/javascript"
-        src="ideologies.js">
+        src="ideologies.js" async>
 </script>
 <script type="application/javascript"
-        src="levels.js">
+        src="levels.js" async>
 </script>
 <script type="application/javascript"
-        src="mbtitypes.js">
+        src="mbtitypes.js" async>
 </script>
 <script type="application/javascript"
-        src="hogwartshouses.js">
+        src="hogwartshouses.js" async>
 </script>
 <script type="application/javascript"
-        src="ilvermornyhouses.js">
+        src="ilvermornyhouses.js" async>
 </script>
 <script type="application/javascript"
-        src="enneagramtypes.js">
+        src="enneagramtypes.js" async>
 </script>
 <script type="application/javascript"
-        src="tritypes.js">
+        src="tritypes.js" async>
 </script>
 <script type="application/javascript"
-        src="instincts.js">
+        src="instincts.js" async>
 </script>
 <script type="application/javascript"
-        src="zodiacsigns.js">
+        src="zodiacsigns.js" async>
 </script>
 <script type="application/javascript"
-        src="archetypes.js">
+        src="archetypes.js" async>
 </script>
 <script type="application/javascript"
-        src="epigenotypes.js">
+        src="epigenotypes.js" async>
 </script>
 <script type="application/javascript"
-        src="bloodtypes.js">
+        src="bloodtypes.js" async>
 </script>
 <script type="application/javascript"
-        src="pokemontypes.js">
+        src="pokemontypes.js" async>
 </script>
 <script type="application/javascript"
-        src="fragrances.js">
+        src="fragrances.js" async>
 </script>
 <script type="application/javascript"
-        src="youtubers.js">
+        src="youtubers.js" async>
 </script>
 <script type="application/javascript"
-        src="tvcharacters.js">
+        src="tvcharacters.js" async>
 </script>
 <script type="application/javascript"
-        src="somatotypes.js">
+        src="somatotypes.js" async>
 </script>
 <script type="application/javascript"
-        src="temperaments.js">
+        src="temperaments.js" async>
 </script>
 <script type="application/javascript"
-        src="disctypes.js">
+        src="disctypes.js" async>
 </script>
 <script type="application/javascript"
-        src="keirseys.js">
+        src="keirseys.js" async>
 </script>
 <script type="application/javascript"
-        src="alignments.js">
+        src="alignments.js" async>
 </script>
 <script type="application/javascript"
-        src="ipipneos.js">
+        src="ipipneos.js" async>
 </script>
 <script type="application/javascript"
-        src="animals.js">
+        src="animals.js" async>
 </script>
 <script type="application/javascript"
-        src="mythicals.js">
+        src="mythicals.js" async>
 </script>
 <script type="application/javascript"
-        src="colors.js">
+        src="colors.js" async>
 </script>
 <script type="application/javascript"
-        src="musics.js">
+        src="musics.js" async>
 </script>
 <script type="application/javascript"
-        src="psycs.js">
+        src="psycs.js" async>
 </script>
 <script type="application/javascript"
-        src="neurotypes.js">
+        src="neurotypes.js" async>
 </script>
 <script type="application/javascript"
-        src="countries.js">
+        src="countries.js" async>
 </script>
 <script type="application/javascript"
-        src="planets.js">
+        src="planets.js" async>
 </script>
 <script type="application/javascript"
-        src="usas.js">
+        src="usas.js" async>
 </script>
 <script type="application/javascript"
-        src="beverages.js">
+        src="beverages.js" async>
 </script>
 <script type="application/javascript"
-        src="walks.js">
+        src="walks.js" async>
 </script>
 <script type="application/javascript"
-        src="t1t5s.js">
+        src="t1t5s.js" async>
 </script>
 <script type="application/javascript"
-        src="windowsvers.js">
+        src="windowsvers.js" async>
 </script async>
 <script type="application/javascript"
-        src="foods.js">
+        src="foods.js" async>
 </script>
 <script type="application/javascript"
-        src="outsiders.js">
+        src="outsiders.js" async>
 </script>
+<script type="application/javascript"
+        src="versions.js" async>
+</script>
+
 
 
 
@@ -236,6 +240,7 @@
 <h6>T1T5: <span class="weight-300" id="t1t5-label"></span></h6>
 <h6>Windows Version: <span class="weight-300" id="windowsver-label"></span></h6>
 <h6>outside of 11A: <span class="weight-300" id="outsider-label"></span></h6>
+<h6>my Version: <span class="weight-300" id="version-label"></span></h6>
 
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -1129,6 +1134,27 @@ stats"></a></div></noscript>
         }
     }
     document.getElementById("outsider-label").innerHTML = outsider
+	
+	version = ""
+    versiondist = Infinity
+    for (var i = 0; i < versions.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(versions[i].stats.a - assertive), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.c - compassionate), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.e - enthusiastic), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.p - polite), 2)
+		dist += Math.pow(Math.abs(versions[i].stats.s - industrious), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.o - orderly), 2)
+		dist += Math.pow(Math.abs(versions[i].stats.w - withdrawn), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.v - volatile), 2)
+		dist += Math.pow(Math.abs(versions[i].stats.n - intellectual), 2)
+        dist += Math.pow(Math.abs(versions[i].stats.x - open), 2)
+        if (dist < versiondist) {
+            version = versions[i].name
+            versiondist = dist
+        }
+    }
+    document.getElementById("version-label").innerHTML = version
 	
 
     </script>
