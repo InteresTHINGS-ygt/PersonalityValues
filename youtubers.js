@@ -137,8 +137,8 @@ youtubers = [
 	{
         "name": "Daniel Karnaukh (Derpy Cuber)",
         "stats": {
-            "a": 50,
-            "e": 60,
+            "a": 20,
+            "e": 30,
             "c": 60,
             "p": 60,
 			"s": 50,
@@ -152,8 +152,8 @@ youtubers = [
 	{
         "name": "Krisztofer Kelemen (Krisz)",
         "stats": {
-            "a": 80,
-            "e": 70,
+            "a": 50,
+            "e": 80,
             "c": 80,
             "p": 80,
 			"s": 50,
@@ -161,7 +161,7 @@ youtubers = [
 			"w": 0,
 			"v": 0,
 			"n": 100,
-			"x": 90
+			"x": 100
         }
     },
 ];
