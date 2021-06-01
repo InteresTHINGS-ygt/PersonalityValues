@@ -1,6 +1,6 @@
 usas = [
     {
-        "name": "a",
+        "name": "USA",
         "stats": {
             "a": 0,
             "e": 0,
@@ -15,7 +15,7 @@ usas = [
         }
     },
     {
-        "name": "a",
+        "name": "USA",
         "stats": {
             "a": 0,
             "e": 0,

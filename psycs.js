@@ -1,6 +1,6 @@
 psycs = [
     {
-        "name": "a",
+        "name": "Coming Soon",
         "stats": {
             "a": 0,
             "e": 0,
@@ -15,7 +15,7 @@ psycs = [
         }
     },
     {
-        "name": "a",
+        "name": "Coming Soon",
         "stats": {
             "a": 0,
             "e": 0,

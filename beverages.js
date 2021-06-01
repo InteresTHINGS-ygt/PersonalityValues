@@ -1,6 +1,6 @@
 beverages = [
     {
-        "name": "a",
+        "name": "Coming Soon",
         "stats": {
             "a": 0,
             "e": 0,
@@ -15,7 +15,7 @@ beverages = [
         }
     },
     {
-        "name": "a",
+        "name": "Coming Soon",
         "stats": {
             "a": 0,
             "e": 0,
