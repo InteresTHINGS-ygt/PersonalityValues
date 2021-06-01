@@ -104,6 +104,7 @@ img.center {
     margin: 2px auto;
     cursor: pointer;
 }
+
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'RockyMutation', sans-serif;
