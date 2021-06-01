@@ -1,5 +1,5 @@
-# PersonalityValues
-The PersonalityValues Personality Test measures your Personality Deca (Big Five x 2 Facets per trait) and it gives you the closest matches for a wide variety of categories such as MBTI, Enneagram, Hogwarts, Political, etc.
+# IdentityExposed
+The IdentityExposed Personality Test measures your Personality Deca (Big Five x 2 Facets per trait) and it gives you the closest matches for a wide variety of categories such as MBTI, Enneagram, Hogwarts, Political, etc.
 
 Extraversion: Passive vs Assertive / Quiet vs Enthusiastic
 
